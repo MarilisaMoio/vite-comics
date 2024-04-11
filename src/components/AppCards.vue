@@ -16,6 +16,7 @@
     @use "../style/partials/variables" as *;
 
     section{
+        min-height: 200px;
         background-color: $secondary_dark;
         color: white;
         font-size: 2rem;

@@ -3,13 +3,15 @@
 	import AppCards from "./components/AppCards.vue"
 	import AppIcons from "./components/AppIcons.vue"
 	import AppNav from "./components/AppNav.vue"
+	import AppContacts from "./components/AppContacts.vue"
 
 	export default {
 		components: {
 			AppHeader,
 			AppCards,
 			AppIcons,
-			AppNav
+			AppNav,
+			AppContacts,
 		}
 	}
 </script>
@@ -22,6 +24,7 @@
 	</main>
 	<footer>
 		<AppNav></AppNav>
+		<AppContacts></AppContacts>
 	</footer>
 </template>
 
