@@ -88,7 +88,12 @@
 </script>
 
 <template>
-    <section>
+    <section class="hero">
+        <div class="container">
+            <div>current series</div>
+        </div>
+    </section>
+    <section class="comics">
         <div class="container">
             <SingleCard v-for="comic in comics" :comic="comic"></SingleCard>
             <button type="button">load more</button>
@@ -99,13 +104,33 @@
 <style scoped lang="scss">
     @use "../style/partials/variables" as *;
 
-    section{
-        min-height: 200px;
+    section.hero{
+        height: 300px;
+        background-image: url(../assets/img/jumbotron.jpg);
+        background-position: center top;
+        background-size: cover;
+        .container{
+            height: 100%;
+            position: relative;
+            div{
+                background-color: $primary_color;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                color: white;
+                font-weight: 600;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translateY(50%);
+            }
+        }
+    }
+
+    section.comics{
         background-color: $secondary_dark;
         color: white;
-        font-size: 2rem;
         .container{
-            padding: 20px;
+            padding: 20px 0px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
