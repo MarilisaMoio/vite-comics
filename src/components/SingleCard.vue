@@ -19,7 +19,7 @@
     
     .card{
         width: calc(100% / 6 - 8px);
-        margin: 8px 0;
+        margin: 12px 0;
         .img-wrapper {
             width: 100%;
             aspect-ratio: 1;
