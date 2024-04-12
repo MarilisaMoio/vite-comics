@@ -12,7 +12,7 @@
 			AppIcons,
 			AppNav,
 			AppContacts,
-		}
+		},
 	}
 </script>
 
